@@ -14,16 +14,22 @@ class Teste{
                 break;
             case "/":
                 return this.a / this.b
-                break;        
+                break;
+            case "-":
+                return this.a - this.b;
+                break;      
             default:
                 break;
         }
     }
 }
-
+// my calc teste
 const soma = new Teste(5,5,"+")
 const multi = new Teste(5,5, "*")
 const divid = new Teste(5,5, "/")
+const subli = new Teste(5,5, "-")
+
 console.log(`Result ${soma.calc()}`);
 console.log(`Result ${multi.calc()}`);
 console.log(`Result ${divid.calc()}`)
+console.log(`Result ${subli.calc()}`)
